@@ -1,5 +1,7 @@
 module SecantMethod
 
+export secant_method
+
 function secant_method(f::Function, x0::Number, x1::Number, args::Tuple=();
                        tol::AbstractFloat=1e-5, maxiter::Integer=50)
     for _ in 1:maxiter
